@@ -7,8 +7,7 @@ spring:
   datasource:
     type: com.zaxxer.hikari.HikariDataSource
     driver-class-name: com.mysql.cj.jdbc.Driver
-#    url: jdbc:mysql://localhost:3306/blog_study?useSSL=false&serverTimezone=GMT%2B8
-    url: jdbc:mysql://42.192.227.166:3306/blog?useSSL=false&serverTimezone=GMT%2B8
+    url: jdbc:mysql://***/blog?useSSL=false&serverTimezone=GMT%2B8
     username: root
     password: 94264944htz
 #    password: 123456
@@ -29,14 +28,12 @@ spring:
       connection-test-query: SELECT 1
   #redis配置
   redis:
-    host: 42.192.227.166
-#    host: localhost
+    host: ***
     port: 6379
-    password: 94264944htz
+    password: ***
   #mq配置
   rabbitmq:
-    host: 42.192.227.166
-#    host: localhost
+    host: ***
     port: 5672
     username: guest
     password: guest
@@ -44,9 +41,9 @@ spring:
   mail:
     host: smtp.qq.com
     # 邮箱号
-    username: 1693740714@qq.com
+    username: ***
     # 邮箱授权码
-    password: qcahpeenlktscjdi
+    password: ***
     default-encoding: UTF-8
     port: 587
     properties:
@@ -70,12 +67,12 @@ mybatis-plus:
 
 #第三方配置信息
 qq:
-  app-id: "101948161"
-  user-info-url: "https://graph.qq.com/user/get_user_info?openid={openid}&access_token={access_token}&oauth_consumer_key={oauth_consumer_key}"
+  app-id: "*"
+  user-info-url: "*"
 
 aliyun:
-  url: " https://blog-htz.oss-cn-hangzhou.aliyuncs.com"
-  endpoint: "http://oss-cn-hangzhou.aliyuncs.com"
-  accessKeyId: "LTAI4GCGuxX5QqHskUq4kf8Y"
-  accessKeySecret: "DByRaVlmxDcg034CfcI0737ZIbdVPz"
-  bucketName: "blog-htz"
+  url: "***"
+  endpoint: "***"
+  accessKeyId: "***"
+  accessKeySecret: "***"
+  bucketName: "***"
